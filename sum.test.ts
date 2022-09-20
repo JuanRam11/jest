@@ -1,9 +1,13 @@
-import sum from './sum';
+import { sum, mult } from './sum';
 import { expect, test } from '@jest/globals';
 import checkNull from './checkNull';
 
 test('adds 1 + 2 to equal 3', () => {
   expect(sum(1, 2)).toBe(3);
+});
+
+test('mults 5 * 2 to equal 10', () => {
+  expect(mult(5, 2)).toBe(10);
 });
 
 test('object assignment', () => {
